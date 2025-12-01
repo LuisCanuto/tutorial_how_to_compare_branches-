@@ -3,25 +3,6 @@ import java.awt.*;
 
 public class Main extends JPanel {
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
-        // Fundo do escudo
-        g.setColor(Color.RED);
-        g.fillRoundRect(50, 50, 200, 250, 50, 50);
-
-        // Faixas pretas
-        g.setColor(Color.BLACK);
-        g.fillRect(50, 100, 200, 30);
-        g.fillRect(50, 170, 200, 30);
-
-        // Letras CRF
-        g.setFont(new Font("Arial", Font.BOLD, 50));
-        g.setColor(Color.WHITE);
-        g.drawString("CRF", 90, 160);
-    }
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("Escudo do Flamengo");
         Main painel = new Main();
